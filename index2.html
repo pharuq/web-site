@@ -145,9 +145,9 @@ if (OCwindowWidth() <= 800) {
 
 <script>
 		alert('JavaScriptのアラート');
-	var x = window.pageXOffset;
-	if (x = 200) {
-		alert('JavaScriptのアラート200');
+	var x = window.pageYOffset;
+	if (x >= 150) {
+		alert('JavaScriptのアラート150');
 		repro.track("Web view event");
 	};
 </script>
