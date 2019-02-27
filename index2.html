@@ -143,7 +143,11 @@ if (OCwindowWidth() <= 800) {
 }
 </script>
 
+<noscript>JavaScriptはOFFです。</noscript>
+
 <script type="text/javascript">
+	document.write("JavaScriptはONです。");
+	window.repro = window.repro.isInAppBrowser
 		alert('JavaScriptのアラート');
 	var x = window.pageYOffset;
 	if (x >= 150) {
